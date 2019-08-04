@@ -69,13 +69,17 @@
 		<div class="jumbotron">
 			<div class="continer">
 				<h1>웹 사이트 소개</h1>
-				<p>이 웹사이트는 부트스트랩으로 만든 JSP 웹 사이트입니다. 최소한의 간단한 로직만을 이용해서 개발했습니다. 디자인 템플릿으로는 부트스트랩을 이용했습니다.</p>
-				<p><a class="btn btn-primary btn-pull" href="#" role="button">자세히 알아보기</a></p>
+				<p>이 웹사이트는 부트스트랩으로 만든 JSP 웹 사이트입니다. 최소한의 간단한 로직만을 이용해서 개발했습니다.<br>
+				디자인 템플릿으로는 부트스트랩을 이용했습니다.<br>
+				이 웹사이트는 나동빈님의 강좌를 참고하여 작성했습니다.<br><br>
+				아래 SNS이미지를 클릭하면 해당 SNS사이트로 이동합니다.<br>
+				아래 링크는 이 웹사이트의 제작자 안현호의 Github 저장소입니다.</p>
+				<p><a class="btn btn-primary btn-pull" href="https://github.com/AhnHyeonho" role="button">AhnHyeonho's Git</a></p>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<div id="myCarousel" class="carousel slide center-block" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1" ></li>
@@ -83,13 +87,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="images/1.png">
+					<a href="https://twitter.com/"><img class="img-responsive center-block" src="images/1.png"></a>
 				</div>
 				<div class="item">
-					<img src="images/2.png">
+					<a href="https://www.instagram.com/"><img class="img-responsive center-block" src="images/2.png"></a>
 				</div>
 				<div class="item">
-					<img src="images/3.png">
+					<a href="https://www.facebook.com/"><img class="img-responsive center-block" src="images/3.png"></a>
 				</div>
 			</div>
 			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
