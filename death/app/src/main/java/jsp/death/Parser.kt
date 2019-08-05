@@ -37,7 +37,7 @@ object Parser {
                 .execute()
             val writeForm = write.parse().select("form").first() as FormElement
             Log.e("form", writeForm.html())
-            val a = writeForm.let {
+            writeForm.let {
                 it.select("[name=bbsTitle]").`val`("앙기모찌$count")
                 it.select("[name=bbsContent]").`val`("asd$count")
                 it.submit()

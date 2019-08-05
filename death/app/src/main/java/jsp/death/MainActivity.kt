@@ -2,6 +2,7 @@ package jsp.death
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         Parser.login()
         button.setOnClickListener {
             Parser.writePost()
+            Toast.makeText(applicationContext,"업로드~^_^",Toast.LENGTH_SHORT).show()
         }
     }
 }
