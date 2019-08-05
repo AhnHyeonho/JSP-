@@ -1,6 +1,5 @@
 package jsp.death
 
-import android.util.Log
 import org.jsoup.Connection
 import org.jsoup.Jsoup
 import org.jsoup.nodes.FormElement
@@ -36,7 +35,6 @@ object Parser {
                 .method(Connection.Method.POST)
                 .execute()
             val writeForm = write.parse().select("form").first() as FormElement
-            Log.e("form", writeForm.html())
             writeForm.let {
                 it.select("[name=bbsTitle]").`val`("앙기모찌$count")
                 it.select("[name=bbsContent]").`val`("asd$count")
