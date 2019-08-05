@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Parser.login()
+
         button.setOnClickListener {
             Parser.writePost()
             Toast.makeText(applicationContext,"업로드~^_^",Toast.LENGTH_SHORT).show()
